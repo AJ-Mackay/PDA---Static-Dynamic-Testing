@@ -25,11 +25,13 @@ def test_card_has_value()
 end
 
 def test_check_for_ace()
-  assert_equal(true, true)
+  result = @cardgame.check_for_ace(@card1)
+  assert_equal(true, result)
 end
 
 def test_highest_card()
-  assert_equal(@card2, @card2)
+  result = @cardgame.highest_card(@card3, @card4)
+  assert_equal(@card4, result)
 end
 
 def test_cards_total()

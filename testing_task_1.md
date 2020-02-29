@@ -8,7 +8,7 @@ class CardGame
 
 
   def checkforAce(card) #Naming is wrong, should be check_for_ace.
-    if card.value = 1
+    if card.value = 1 #Should be double equals.
       return true
     else
       return false
@@ -30,5 +30,5 @@ def self.cards_total(cards)
     total += card.value #End should be after the return
     return "You have a total of" + total #Missing whitespace & .to_s() at the end of total
   end
-end #Missing end for "class"
+end #Missing end for "class CardGame"
 ```
